@@ -227,11 +227,11 @@ class trek1000_localizer:
 
         tag_pose = np.zeros((3,1))  # place holder 
 
-        # Suppose the known anchor positions are as follows (as a default)      
-        anc_0 = [0, 0, 2.6]
-        anc_1 = [5.5, 0, 2.6]
-        anc_2 = [5.5, 5.6, 2.6]
-        anc_3 = [0, 5.7, 2.6]
+        # Suppose the known anchor positions are as follows (as a default)  - MIR250 4 anchors at every corner used    
+        anc_0 = [0, 0, 0]
+        anc_1 = [0.7, 0, 0]
+        anc_2 = [0.7, 0.5, 0]
+        anc_3 = [0, 0.35, 0.2]
 
         matA = np.array([[anc_1[0] - anc_0[0],  anc_1[1] - anc_0[1],  anc_1[2] - anc_0[2]],
               [anc_2[0] - anc_0[0],  anc_2[1] - anc_0[1],  anc_2[2] - anc_0[2]],
